@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S.A.M. – Datenschutz</title>
+  <style>
+    :root { color-scheme: light dark; --text: #1d2125; --grund: #fbfbfa; --leise: #5b636b; --akzent: #0f766e; }
+    @media (prefers-color-scheme: dark) { :root { --text: #e8eaec; --grund: #121417; --leise: #a3abb3; --akzent: #5eead4; } }
+    body { margin: 0; background: var(--grund); color: var(--text); font: 17px/1.6 system-ui, sans-serif; }
+    main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+    h1 { font-size: 1.8rem; margin: 0 0 .25rem; }
+    h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+    .unter { color: var(--leise); margin: 0 0 2rem; }
+    a { color: var(--akzent); }
+    li { margin: .25rem 0; }
+    footer { margin-top: 3rem; color: var(--leise); font-size: .9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Datenschutzerklärung</h1>
+  <p class="unter">S.A.M. – privater Assistent von Samuel · Stand: 13. Oktober 2026</p>
+
+  <h2>Wer S.A.M. nutzt</h2>
+  <p>S.A.M. hat genau einen Nutzer: Samuel, der es selbst gebaut hat und betreibt. Es verbindet sich nur mit
+    seinen eigenen Google-Konten. Andere Personen können sich nicht anmelden.</p>
+
+  <h2>Welche Google-Daten S.A.M. verwendet</h2>
+  <ul>
+    <li><strong>Google Kalender</strong> (voller Zugriff): Termine lesen, um sie anzuzeigen und daran zu
+      erinnern; Termine anlegen, ändern oder löschen, wenn Samuel es bestätigt oder ausdrücklich erlaubt hat.</li>
+    <li><strong>Gmail</strong> (Lesen und Ändern, drei eigene Postfächer): Betreff, Absender, Datum und
+      Labels lesen, um Mails zu ordnen; bei Belegen auch den Mailtext und die Namen der Anhänge. Mails
+      beschriften und archivieren, nach Samuels eigenen Regeln. S.A.M. versendet keine Mails und löscht keine
+      endgültig.</li>
+    <li><strong>YouTube</strong> (nur Lesen): die eigenen Abos, um neue Videos anzuzeigen.</li>
+    <li><strong>Google-Konto</strong>: E-Mail-Adresse und Name, um zu erkennen, welches Konto verbunden ist.</li>
+  </ul>
+
+  <h2>Wo die Daten bleiben</h2>
+  <ul>
+    <li>Gespeichert wird auf Samuels eigenem Raspberry Pi. Verlauf und Ereignisse mit persönlichem Inhalt
+      löscht S.A.M. nach 90 Tagen; Zustände wie gespiegelte Termine bleiben, solange sie gebraucht werden.</li>
+    <li>Die Zugangsschlüssel liegen nur auf Samuels Geräten, geschützt vor anderen Benutzern des Geräts.</li>
+    <li>Sicherungen werden verschlüsselt und in Samuels eigenem Google Drive abgelegt. Den Schlüssel dazu hat
+      nur Samuel.</li>
+    <li>Sprachverarbeitung durch eine KI geschieht auf Samuels eigenem PC (lokales Modell), nicht bei einem
+      Cloud-Anbieter.</li>
+    <li>Benachrichtigungen erreichen Samuels Handy über einen eigenen Benachrichtigungsserver auf dem
+      Raspberry Pi, nur in seinem privaten Netz erreichbar.</li>
+  </ul>
+
+  <h2>Keine Weitergabe</h2>
+  <p>S.A.M. verkauft keine Daten, zeigt keine Werbung, hat kein Tracking und keine Analysewerkzeuge und gibt
+    Google-Daten an niemanden weiter. Google-Daten werden nicht verwendet, um KI-Modelle zu trainieren.</p>
+  <p>Bei der Weiterentwicklung nutzt Samuel KI-Programmierwerkzeuge. Sie bekommen den Programmcode, nicht
+    automatisch Google-Daten. Für eine Fehlersuche kann Samuel ihnen einzelne Auswertungen selbst zeigen.</p>
+  <p>Die Verwendung von Daten aus Google-APIs hält sich an die
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+    Policy</a>, einschliesslich der Anforderungen zur eingeschränkten Nutzung („Limited Use“).</p>
+
+  <h2>Zugriff widerrufen</h2>
+  <p>Der Zugriff lässt sich jederzeit unter
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> entziehen.
+    Danach kann S.A.M. nicht mehr auf das jeweilige Konto zugreifen.</p>
+
+  <footer>
+    Kontakt: <a href="https://github.com/Mr-Geschmeidig">github.com/Mr-Geschmeidig</a> ·
+    <a href="index.html">Zur Startseite</a>
+  </footer>
+</main>
+</body>
+</html>
